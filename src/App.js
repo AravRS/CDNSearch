@@ -22,14 +22,17 @@ function App() {
         <h1 className="header-title">CDN SEARCH</h1>
         <SearchForm params={params} onParamChange={handleParamChange} />
         <div className="info-text">
-          Showing {libs.total} / {libs.available}
+          {loading && <span>Loading...</span>}
+          {error && <span className="error-text">Error!</span>}
+          {!loading && !error && (
+            <span>
+              Showing {libs.total} / {libs.available}
+            </span>
+          )}
         </div>
       </header>
 
       <main>
-        {loading && <h1>Loading...</h1>}
-        {error && <h1>Error...</h1>}
-
         {libs.results &&
           libs.results.map((lib) => {
             return <Lib lib={lib} />;
