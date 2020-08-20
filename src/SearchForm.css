@@ -1,0 +1,11 @@
+.search {
+    padding: 15px 40px 15px 20px;
+    width: 70vw;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}

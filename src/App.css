@@ -1,0 +1,30 @@
+.header {
+    height: 35vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+}
+
+.header-title {
+    color: white;
+    font-family: 'Fredoka One', cursive;
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
+.info-text {
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    font-size: 10px;
+    font-weight: 300;
+    text-align: end;
+    margin: 5px 15% 0px auto;
+}
+
+.footer {}

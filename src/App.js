@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import useFetchLibs from "./useFetchLibs";
 import SearchForm from "./SearchForm";
 import Lib from "./Lib";
+import "./App.css";
 
 function App() {
   const [params, setParams] = useState({});
@@ -17,19 +18,25 @@ function App() {
 
   return (
     <div>
-      <SearchForm params={params} onParamChange={handleParamChange} />
+      <header className="header">
+        <h1 className="header-title">CDN SEARCH</h1>
+        <SearchForm params={params} onParamChange={handleParamChange} />
+        <div className="info-text">
+          Showing {libs.total} / {libs.available}
+        </div>
+      </header>
 
-      {loading && <h1>Loading...</h1>}
-      {error && <h1>Error...</h1>}
+      <main>
+        {loading && <h1>Loading...</h1>}
+        {error && <h1>Error...</h1>}
 
-      {libs.results &&
-        libs.results.map((lib) => {
-          return <Lib lib={lib} />;
-        })}
+        {libs.results &&
+          libs.results.map((lib) => {
+            return <Lib lib={lib} />;
+          })}
+      </main>
 
-      <h3>
-        Showing {libs.total} / {libs.available}
-      </h3>
+      <footer className="footer"></footer>
     </div>
   );
 }

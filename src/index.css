@@ -3,3 +3,26 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: #141519;
+  font-family: 'Comfortaa', cursive;
+  font-weight: 300;
+  border-radius: 5px;
+  min-width: 500px;
+  min-height: 600px;
+  overflow-y: scroll;
+}
+
+
+/* SCROLL BAR  */
+
+body::-webkit-scrollbar {
+  width: 6px;
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 5px;
+}
