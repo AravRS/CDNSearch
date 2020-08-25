@@ -4,22 +4,42 @@ import ReactTooltip from "react-tooltip";
 import "./Libs.css";
 
 export default function Lib({ lib }) {
-  // TODO: display gtihub stats (and repo link ), filetype logo, link name to homepage
+  // TODO: display gtihub stats
 
   return (
     <div className="libs-container">
-      <div className="libs-info">
-        <h1 className="libs-name">{lib.name}</h1>
-        <sup>
-          {lib.version} - {lib.filename}
-        </sup>
-        <p>{lib.description}</p>
+      <div className="libs-main">
+        <div className="libs-header">
+          <a
+            className="libs-name glow"
+            href={lib.homepage}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {lib.name}
+          </a>
+        </div>
+        <div className="libs-info">
+          <span className="libs-version">{lib.version}</span> -{" "}
+          <span className={lib.fileType === "js" ? "js" : "css"}>
+            {lib.filename}
+          </span>
+        </div>
+        <div className="libs-description">
+          <p>{lib.description}</p>
+        </div>
       </div>
 
       <CopyToClipboard onCopy="" text={lib.latest}>
-        <button data-tip="React-tooltip" data-for="copy-script">
-          Copy
-        </button>
+        <div
+          className={
+            "glow btn " + (lib.fileType === "js" ? "js-btn" : "css-btn")
+          }
+          data-tip
+          data-for="copy-script"
+        >
+          <i className="fas fa-code fa-3x"></i>
+        </div>
       </CopyToClipboard>
 
       <ReactTooltip
@@ -27,6 +47,8 @@ export default function Lib({ lib }) {
         place="bottom"
         type="light"
         effect="solid"
+        event="mouseenter"
+        eventOff="mouseleave click"
         className="tooltip"
       >
         <span>Click to copy!</span>

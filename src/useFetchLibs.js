@@ -49,7 +49,7 @@ export default function useFetchLibs(params) {
         cancelToken: cancelToken.token,
         params: {
           limit: 10,
-          fields: "version,filename,description",
+          fields: "version,filename,description,fileType,homepage",
           ...params,
         },
       })
