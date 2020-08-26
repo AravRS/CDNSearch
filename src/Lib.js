@@ -30,7 +30,14 @@ export default function Lib({ lib }) {
         </div>
       </div>
 
-      <CopyToClipboard onCopy="" text={lib.latest}>
+      <CopyToClipboard
+        onCopy=""
+        text={
+          lib.fileType === "js"
+            ? `<script src="${lib.latest}"></script>`
+            : `<link rel="stylesheet" href="${lib.latest}" />`
+        }
+      >
         <div
           className={
             "glow btn " + (lib.fileType === "js" ? "js-btn" : "css-btn")
