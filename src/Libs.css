@@ -1,6 +1,6 @@
 .libs-container {
     color: white;
-    margin: 20px 10%;
+    margin: 20px 16% 20px 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,9 +26,30 @@
     color: white;
 }
 
+.libs-github {
+    font-size: 12px;
+    font-weight: 500;
+    color: #565b64;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.libs-github>i {
+    font-size: 15px;
+    margin-right: 2px;
+}
+
+.copy-btns {
+    display: flex;
+    margin-left: 5%;
+}
+
+.copy-btns>div {
+    margin-left: 15%;
+}
 
 .glow {
-    color: white;
+    /* color: white; */
     cursor: pointer;
 }
 
@@ -44,18 +65,30 @@
     opacity: 0.9;
 }
 
-.btn {
-    margin-left: 5%;
-}
-
 .js,
 .js-btn:hover {
-    color: #fed330;
+    color: #ffd438;
+}
+
+.js-url-btn:hover {
+    color: #fd9644;
+}
+
+.js-sri-btn:hover {
+    color: #fc5c65;
 }
 
 .css,
 .css-btn:hover {
     color: #45aaf2;
+}
+
+.css-url-btn:hover {
+    color: #2bcbba;
+}
+
+.css-sri-btn:hover {
+    color: #26de81;
 }
 
 .libs-info {
@@ -74,6 +107,7 @@
     font-weight: 300;
 }
 
+
 @media (max-width: 500px) {
 
     .libs-container {
@@ -84,7 +118,10 @@
         font-size: 22px;
     }
 
-    .libs-description {
+    .libs-description,
+    .libs-github,
+    .url,
+    .sri {
         display: none;
     }
 
