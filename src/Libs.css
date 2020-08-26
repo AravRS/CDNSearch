@@ -35,6 +35,7 @@
 .glow:hover {
     text-shadow: 0 0 30px;
     transition: text-shadow 0.5s;
+    transition: color 0.3s;
 }
 
 .glow:active {
@@ -71,4 +72,20 @@
 .libs-description {
     font-size: 16px;
     font-weight: 300;
+}
+
+@media (max-width: 500px) {
+
+    .libs-container {
+        margin: 8px 10%;
+    }
+
+    .libs-name {
+        font-size: 22px;
+    }
+
+    .libs-description {
+        display: none;
+    }
+
 }

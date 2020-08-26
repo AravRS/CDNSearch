@@ -1,5 +1,6 @@
 .header {
     height: 35vh;
+    margin-bottom: 16px;
     background-color: black;
     display: flex;
     align-items: center;
@@ -32,3 +33,17 @@
 }
 
 .footer {}
+
+@media (max-width: 500px) {
+    .header {
+        height: 28vh;
+    }
+
+    .header-title {
+        font-size: 35px;
+    }
+
+    .info-text {
+        font-size: 10px;
+    }
+}

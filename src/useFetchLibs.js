@@ -48,7 +48,7 @@ export default function useFetchLibs(params) {
       .get(BASE_URL, {
         cancelToken: cancelToken.token,
         params: {
-          limit: 10,
+          limit: 7,
           fields: "version,filename,description,fileType,homepage",
           ...params,
         },

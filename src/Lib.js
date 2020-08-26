@@ -38,7 +38,7 @@ export default function Lib({ lib }) {
           data-tip
           data-for="copy-script"
         >
-          <i className="fas fa-code fa-3x"></i>
+          <i className="fas fa-code fa-2x"></i>
         </div>
       </CopyToClipboard>
 
