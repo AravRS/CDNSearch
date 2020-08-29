@@ -7,18 +7,6 @@
 
 }
 
-.tooltip {
-    font-family: 'Comfortaa', cursive;
-    font-size: 10px !important;
-    font-weight: 700 !important;
-    letter-spacing: 0.8px;
-    color: black !important;
-    background-color: white !important;
-    opacity: 1 !important;
-    padding: 2px !important;
-    pointer-events: auto !important;
-}
-
 .libs-name {
     font-size: 25px;
     font-weight: 700;
@@ -39,6 +27,23 @@
     margin-right: 2px;
 }
 
+.libs-info {
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.libs-version {
+    font-weight: 500;
+    color: #bebebe
+}
+
+.libs-description {
+    color: #f1f1f1;
+    font-size: 16px;
+    font-weight: 300;
+}
+
 .copy-btns {
     display: flex;
     margin-left: 5%;
@@ -49,14 +54,12 @@
 }
 
 .glow {
-    /* color: white; */
     cursor: pointer;
 }
 
 .glow:hover {
     text-shadow: 0 0 30px;
     transition: text-shadow 0.5s;
-    transition: color 0.3s;
 }
 
 .glow:active {
@@ -64,6 +67,7 @@
     top: 2px;
     opacity: 0.9;
 }
+
 
 .js,
 .js-btn:hover {
@@ -88,23 +92,20 @@
 }
 
 .css-sri-btn:hover {
-    color: #26de81;
+    color: #a55eea;
 }
 
-.libs-info {
-    font-size: 12px;
-    font-weight: 300;
-    margin-bottom: 5px;
-}
 
-.libs-version {
-    font-weight: 500;
-    color: #bebebe
-}
-
-.libs-description {
-    font-size: 16px;
-    font-weight: 300;
+.tooltip {
+    font-family: 'Comfortaa', cursive;
+    font-size: 10px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.8px;
+    color: black !important;
+    background-color: white !important;
+    opacity: 1 !important;
+    padding: 2px !important;
+    pointer-events: auto !important;
 }
 
 

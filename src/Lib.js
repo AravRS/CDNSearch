@@ -35,7 +35,7 @@ export default function Lib({ lib }) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i class="fab fa-github"></i>
+            <i className="fab fa-github"></i>
             {formatNumber(lib.github.stargazers_count)}
           </a>
         </div>
@@ -60,7 +60,7 @@ export default function Lib({ lib }) {
             data-tip
             data-for="copy-url"
           >
-            <i class="fas fa-link fa-2x"></i>
+            <i className="fas fa-link fa-2x"></i>
           </div>
         </CopyToClipboard>
 
@@ -92,7 +92,7 @@ export default function Lib({ lib }) {
             data-tip
             data-for="copy-sri"
           >
-            <i class="fas fa-shield-alt fa-2x"></i>
+            <i className="fas fa-shield-alt fa-2x"></i>
           </div>
         </CopyToClipboard>
       </div>

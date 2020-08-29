@@ -35,11 +35,26 @@ function App() {
       <main>
         {libs.results &&
           libs.results.map((lib) => {
-            return <Lib lib={lib} />;
+            return <Lib key={lib.name} lib={lib} />;
           })}
       </main>
 
-      <footer className="footer"></footer>
+      <footer className="footer">
+        <div>
+          <a herf="#" target="_blank" rel="noopener noreferrer">
+            <i className="fas glow fa-globe"></i>
+          </a>
+          &nbsp;
+          <a herf="#" target="_blank" rel="noopener noreferrer">
+            <i className="fab glow fa-chrome"></i>
+          </a>
+        </div>
+        <div>
+          <a herf="#" target="_blank" rel="noopener noreferrer">
+            <i className="fab glow fa-github"></i>
+          </a>
+        </div>
+      </footer>
     </div>
   );
 }
