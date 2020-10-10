@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "CDN Search",
-  "description": "CDNSearch",
+  "description": "Quickly search for libraries/frameworks delivered through CDNs for rapid prototyping. Available as a chrome extension and a website.",
   "version": "0.0.1",
   "icons": { "48": "logo_icon.png" },
   "browser_action": {

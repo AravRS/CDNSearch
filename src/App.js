@@ -41,16 +41,28 @@ function App() {
 
       <footer className="footer">
         <div>
-          <a herf="#" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://cdnsearch.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="fas glow fa-globe"></i>
           </a>
           &nbsp;
-          <a herf="#" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://github.com/AravRS/CDNSearch/releases"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="fab glow fa-chrome"></i>
           </a>
         </div>
         <div>
-          <a herf="#" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://github.com/AravRS/CDNSearch"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="fab glow fa-github"></i>
           </a>
         </div>
