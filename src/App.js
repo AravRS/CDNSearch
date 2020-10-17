@@ -5,7 +5,7 @@ import Lib from "./Lib";
 import "./App.css";
 
 function App() {
-  const [params, setParams] = useState({});
+  const [params, setParams] = useState({ search: "" });
   const { libs, loading, error } = useFetchLibs(params);
 
   function handleParamChange(e) {

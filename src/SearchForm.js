@@ -1,5 +1,6 @@
 import React from "react";
 import "./SearchForm.css";
+import { PropTypes } from "prop-types";
 
 export default function SearchForm({ params, onParamChange }) {
   return (
@@ -9,10 +10,14 @@ export default function SearchForm({ params, onParamChange }) {
         name="search"
         className="search"
         placeholder="Search"
-        onChange={onParamChange}
-        value={params.search}
+        onChange={(e) => onParamChange(e)}
+        value={params.search || ""}
         autoFocus
       />
     </form>
   );
 }
+SearchForm.propTypes = {
+  params: PropTypes.object,
+  onParamChange: PropTypes.func,
+};
